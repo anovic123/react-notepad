@@ -22,7 +22,7 @@ export const CreateNote: React.FC<CreateNoteProps> = ({ setNotes }) => {
     setData({ ...data, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement> | any): void => {
     e.preventDefault();
     if (data.title && data.details) {
       const note: Notes = { id: v4(), title: data.title, details: data.details, date };
