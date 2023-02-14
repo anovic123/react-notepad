@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: #fff;
+  background: rgb(37, 37, 37);
+}
+
+.app {
+  max-width: 800px;
+  margin: 10px auto 0 auto;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*--------------------General--------------------*/
+
+.btn-danger {
+  background: red;
+}
+
+.btn-search {
+  border-radius: 0 5px 5px 0;
+}
+
+button {
+  width: max-content;
+  height: 36px;
+  background: #0bb6d4;
+  padding: 0 7px;
+  border-radius: 3px;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background: #09437e;
+}
+
+button svg {
+  height: 25px;
+  width: 25px;
+}
+
+.add__btn {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+
+.add__btn svg {
+  color: #fff;
+}
+
+.add__btn:hover {
+  transform: scale(95%);
+}
+
+.btn-search svg {
+  height: 25.5px;
+  width: 25.5px;
+}
+
+.btn-back svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-lg {
+  background: rgb(78, 78, 78);
+}
+
+.btn-save {
+  background: rgb(136, 7, 211);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  margin-bottom: 20px;
+}
+
+/*--------------------/General--------------------*/
+
+/*--------------------Notes--------------------*/
+
+.notes__header {
+  margin-bottom: 50px;
+}
+
+.notes__header-search {
+  display: flex;
+  justify-content: center;
+}
+
+.notes__header-search input {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  padding: 0 10px;
+  max-height: 36px;
+}
+
+.notes__container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.notes__empty {
+  text-align: center;
+}
+
+.note {
+  border: 1px solid rgb(155, 152, 152);
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.note h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.note div {
+  font-size: 9px;
+  font-weight: 500;
+  text-align: right;
+}
+
+/*--------------------/Notes--------------------*/
+
+/*--------------------Create-Note--------------------*/
+
+.create-note__form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create-note__form input {
+  margin-bottom: 10px;
+  width: 310px;
+  height: 40px;
+  background: #f5f7fb;
+  box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+  border-radius: 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0px 0px 0px 25px;
+}
+
+.create-note__form textarea {
+  border: 0px;
+  width: 310px;
+  height: 40px;
+  background: #f5f7fb;
+  box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+  border-radius: 20px;
+  resize: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 12px 0px 0px 25px;
+}
+
+/*--------------------/Create-Note--------------------*/
